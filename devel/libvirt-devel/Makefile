@@ -1,12 +1,12 @@
 PORTNAME=	libvirt
-DISTVERSION=	11.4.0
+DISTVERSION=	11.5.0
 CATEGORIES=	devel
 PKGNAMESUFFIX=  -devel
 
 USE_GITLAB=	yes
 GL_ACCOUNT=	libvirt keycodemap:keycode
 GL_PROJECT=	libvirt keycodemapdb:keycode
-GL_COMMIT=	3e2af21dda7a4aec6c5086dbfcc557488120da57 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
+GL_COMMIT=	6f64315ba7c02481f483d7e236f0f35cbd0e97da 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
 
 MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Toolkit to interact with virtualization capabilities
@@ -144,7 +144,7 @@ USE_PERL5=	build
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
-SHLIB_VER=	0.11005.0
+SHLIB_VER=	0.11006.0
 PLIST_SUB+=	SHLIB_VER=${SHLIB_VER}
 PORTDOCS=	*
 #SHEBANG_FILES=	bin/virt-qemu-sev-validate \
@@ -156,7 +156,7 @@ SUB_FILES=	pkg-message
 
 .include <bsd.port.options.mk>
 
-.if ${PORT_OPTIONS:MQEMU} || ${PORT_OPTIONS:MNSS}
+.if ${PORT_OPTIONS:MQEMU} || ${PORT_OPTIONS:MNSS} || ${PORT_OPTIONS:MBHYVE}
 LIB_DEPENDS+=		libjson-c.so:devel/json-c
 MESON_ARGS+=	-Djson_c=enabled
 .else
