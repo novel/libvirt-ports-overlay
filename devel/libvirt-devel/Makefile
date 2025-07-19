@@ -1,12 +1,12 @@
 PORTNAME=	libvirt
-DISTVERSION=	11.5.0
+DISTVERSION=	11.6.0
 CATEGORIES=	devel
 PKGNAMESUFFIX=  -devel
 
 USE_GITLAB=	yes
 GL_ACCOUNT=	libvirt keycodemap:keycode
 GL_PROJECT=	libvirt keycodemapdb:keycode
-GL_COMMIT=	6f64315ba7c02481f483d7e236f0f35cbd0e97da 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
+GL_COMMIT=	6f8c5c07cfee2269fb87293ff90f6b49b8c87671 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
 
 MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Toolkit to interact with virtualization capabilities
