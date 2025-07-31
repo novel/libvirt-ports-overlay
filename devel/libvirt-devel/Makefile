@@ -6,7 +6,7 @@ PKGNAMESUFFIX=  -devel
 USE_GITLAB=	yes
 GL_ACCOUNT=	libvirt keycodemap:keycode
 GL_PROJECT=	libvirt keycodemapdb:keycode
-GL_COMMIT=	6f8c5c07cfee2269fb87293ff90f6b49b8c87671 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
+GL_COMMIT=	ab71cd66a95f3542c181f646fdc1c7f809862b9f 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
 
 MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Toolkit to interact with virtualization capabilities
