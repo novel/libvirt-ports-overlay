@@ -1,12 +1,12 @@
 PORTNAME=	libvirt
-DISTVERSION=	11.7.0
+DISTVERSION=	11.8.0
 CATEGORIES=	devel
 PKGNAMESUFFIX=  -devel
 
 USE_GITLAB=	yes
 GL_ACCOUNT=	libvirt keycodemap:keycode
 GL_PROJECT=	libvirt keycodemapdb:keycode
-GL_COMMIT=	75e6158a95167f7655879f232af44a3737d30eb0 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
+GL_COMMIT=	9d57b562bdbf35945d9e9ac3220a27d1989115af 22b8996dba9041874845c7446ce89ec4ae2b713d:keycode
 
 MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Toolkit to interact with virtualization capabilities
@@ -144,7 +144,7 @@ USE_PERL5=	build
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
-SHLIB_VER=	0.11007.0
+SHLIB_VER=	0.11008.0
 PLIST_SUB+=	SHLIB_VER=${SHLIB_VER}
 PORTDOCS=	*
 #SHEBANG_FILES=	bin/virt-qemu-sev-validate \
